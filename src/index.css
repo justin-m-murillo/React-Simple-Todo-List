@@ -53,6 +53,17 @@
   border-radius: 10px;
 }
 
+/* NAVIBAR */
+.navi-add-btn {
+  margin-right: 10px;
+  text-align: center;
+}
+
+.navi-add-btn Button{
+  min-width: 60px;
+  width: 100%;
+}
+
 
 /* TO-DO LIST */
 .todo-btn {
@@ -66,16 +77,6 @@
   }
 }
 
-.todo-add-btn {
-  margin-right: 10px;
-  text-align: center;
-}
-
-.todo-add-btn Button{
-  min-width: 60px;
-  width: 100%;
-}
-
 .todo-dateTime {
   font-size: 14px;
 }
@@ -85,17 +86,21 @@
   padding: 10px 3px;
 }
 
-.todo-item-container:hover {
+/* .todo-item-container:hover {
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+} */
+
+.todo-item-row {
+  margin-bottom: 8px;
 }
 
-.todo-see-more {
+/* .todo-see-more {
   margin-top: 3px;
   color: #838383;
-}
+} */
 
 .todo-text {
-  margin-bottom: 10px;
+  margin-bottom: 0px;
   text-align: center;
 }
 

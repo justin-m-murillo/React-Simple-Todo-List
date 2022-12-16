@@ -16,7 +16,7 @@ const Navibar = ({ handleAlerts }) => {
                             Simple To-Do List
                         </Link>
                     </Navbar.Brand>
-                        <Nav className="ms-auto todo-add-btn">
+                        <Nav className="ms-auto navi-add-btn">
                             <Link to="/add-task">
                                 <button 
                                     className="btn btn-primary" 

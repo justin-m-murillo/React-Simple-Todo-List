@@ -22,8 +22,8 @@ const ToDoListDisplay = ({ todos, handleDelete }) => {
         <Container>
             {todos.map((item) => (
                 <div className='todo-item-container' key={ item.id }>
-                    <Row className="justify-content-sm-center">
-                        <Col sm={{ span: 5 }}>
+                    <Row className="todo-item-row justify-content-sm-center">
+                        <Col sm={{ span: 5 }} className="my-auto">
                             <div className="todo-text">
                                 <span className='todo-title'><strong>{ item.title }</strong></span>
                                 <br/>
@@ -32,7 +32,7 @@ const ToDoListDisplay = ({ todos, handleDelete }) => {
                                 </span>
                             </div>
                         </Col>
-                        <Col className="d-flex flex-column text-center" sm={{ span: 2 }}>
+                        <Col className="d-flex flex-column text-center my-auto" sm={{ span: 2 }}>
                             <div>
                                 <span className='todo-dateTime'>{ item.hour }:{ item.min } { item.mdm }</span>
                             </div>
@@ -40,7 +40,7 @@ const ToDoListDisplay = ({ todos, handleDelete }) => {
                                 <span className='todo-dateTime'>{ item.date.month }/{ item.date.day }/{ item.date.year }</span>
                             </div>
                         </Col>
-                        <Col sm={{ span: 5 }}>
+                        <Col sm={{ span: 5 }} className="my-auto">
                             <div className="text-center">
                                 <InfoCircle
                                     size={"50px"}
