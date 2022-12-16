@@ -46,7 +46,7 @@ const AddTask = ({ handleAlerts }) => {
         }
         else {
             handleAlerts([]);
-        }
+        } 
 
         setIsPending(true);
         console.log('fetching');
@@ -121,6 +121,7 @@ const AddTask = ({ handleAlerts }) => {
                 </div>
                 {/* MINUTES */}
                 <div className="d-inline-block">
+                    :
                     <select 
                         className="add-time"
                         value={min}

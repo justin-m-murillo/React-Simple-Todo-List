@@ -1,20 +1,6 @@
 {
   "todos": [
     {
-      "title": "Full test",
-      "memo": "full test all fields except location",
-      "date": {
-        "year": 2022,
-        "month": 12,
-        "day": 15
-      },
-      "hour": "8",
-      "min": "35",
-      "mdm": "PM",
-      "addr": "",
-      "id": 1
-    },
-    {
       "title": "Check this out!!!!",
       "memo": "I dig these icons, makes life so much easier",
       "date": {
@@ -29,8 +15,22 @@
       "id": 2
     },
     {
-      "title": "This is a good to-do",
-      "memo": "this is a good to-do post",
+      "title": "Gotta learn animations now fml",
+      "memo": "Animations might irritate me. If only there were more game dev jobs smh.",
+      "date": {
+        "year": 2022,
+        "month": 12,
+        "day": 16
+      },
+      "hour": "12",
+      "min": "00",
+      "mdm": "PM",
+      "addr": "home",
+      "id": 4
+    },
+    {
+      "title": "How do these items stack",
+      "memo": "When items have inconsistent height",
       "date": {
         "year": 2022,
         "month": 12,
@@ -39,8 +39,8 @@
       "hour": "1",
       "min": "00",
       "mdm": "AM",
-      "addr": "",
-      "id": 3
+      "addr": "macbook",
+      "id": 5
     }
   ]
 }
