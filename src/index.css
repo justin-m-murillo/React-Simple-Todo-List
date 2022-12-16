@@ -1,13 +1,114 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* .app-container {
+  margin: 10px 40px;
+} */
+
+.main {
+  min-height: 40rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.main-container {
+  max-width: 600px;
+}
+
+/* ALERT */
+.alert-container {
+  min-height: 8rem;
+  text-align: center;
+}
+
+.alert-display {
+  max-width: 50%;
+}
+
+.alert-message {
+  margin-bottom: 8px;
+}
+
+/* ADD-TASK */
+.add-task-container {
+  padding: 10px 20px;
+}
+
+.add-task-container select {
+  margin: 0px 5px 0px 5px;
+}
+
+.add-time {
+  height: 30px;
+  font-size: 13px;
+  text-align: center;
+  border-color: #ddd;
+  border-radius: 10px;
+}
+
+.add-title-input {
+  margin: 0px 10px; 
+}
+
+.add-heading {
+  margin-right: 10px;
+}
+
+.DatePicker__input {
+  border-radius: 10px;
+}
+
+
+/* TO-DO LIST */
+.todo-btn {
+  cursor: pointer;
+  margin: 2px 10px 2px 15px;
+}
+
+@media screen and (max-width: 575px) {
+  .todo-btn {
+    margin: 15px;
+  }
+}
+
+.todo-add-btn {
+  margin-right: 10px;
+  text-align: center;
+}
+
+.todo-add-btn Button{
+  min-width: 60px;
+  width: 100%;
+}
+
+.todo-dateTime {
+  font-size: 14px;
+}
+
+.todo-item-container {
+  margin-bottom: 8px;
+  padding: 10px 3px;
+}
+
+.todo-item-container:hover {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.todo-see-more {
+  margin-top: 3px;
+  color: #838383;
+}
+
+.todo-text {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+@media screen and (max-width: 575px) {
+  .todo-text {
+    text-align: center;
+  }
+}
+
+.todo-title {
+  font-size: 18px;
+}
+
+.todo-preview {
+  font-size: 14px;
 }
