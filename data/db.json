@@ -1,20 +1,6 @@
 {
   "todos": [
     {
-      "title": "Check this out!!!!",
-      "memo": "I dig these icons, makes life so much easier",
-      "date": {
-        "year": 2022,
-        "month": 12,
-        "day": 16
-      },
-      "hour": "3",
-      "min": "10",
-      "mdm": "AM",
-      "addr": "",
-      "id": 2
-    },
-    {
       "title": "Gotta learn animations now fml",
       "memo": "Animations might irritate me. If only there were more game dev jobs smh.",
       "date": {

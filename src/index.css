@@ -81,6 +81,19 @@
   font-size: 14px;
 }
 
+.todo-details-child {
+  max-height: 0;
+  opacity: 0;
+  border-bottom: 1px solid #ddd;
+  overflow: hidden;
+  transition: max-height 1s, opacity 0.7s ease-out;
+}
+
+.todo-details-child.todo-details-child-anim {
+  max-height: 500px;
+  opacity: 1;
+}
+
 .todo-item-container {
   margin-bottom: 8px;
   padding: 10px 3px;
