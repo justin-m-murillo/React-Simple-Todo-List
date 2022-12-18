@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useHistory } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import 'react-modern-calendar-datepicker/lib/DatePicker.css';
 import DatePicker from '@amir04lm26/react-modern-calendar-date-picker';
 import { utils } from '@amir04lm26/react-modern-calendar-date-picker';
@@ -82,74 +82,83 @@ const AddTask = ({ handleAlerts }) => {
                     onChange={(e) => setMemo(e.target.value)}
                 />
                 <br/>
-                <h5 className="add-heading d-inline-block">Date</h5>
-                <div className="d-inline-block">
-                    <DatePicker 
-                        value={date}
-                        onChange={setDate}
-                        minimumDate={utils().getToday()}
-                        colorPrimary="#FF5733"
-                        formatInputText={formatInputValue}
-                    />
+                <div className="add-heading d-inline-block">
+                    <h5 
+                        className="d-inline-block"
+                        style={{
+                            marginRight: '10px'
+                        }}
+                    >Date</h5>
+                    <div className="d-inline-block">
+                        <DatePicker 
+                            value={date}
+                            onChange={setDate}
+                            minimumDate={utils().getToday()}
+                            colorPrimary="#FF5733"
+                            formatInputText={formatInputValue}
+                        />
+                    </div>
                 </div>
-                <h5 
-                    className="add-heading d-inline-block"
-                    style={{ marginLeft: '20px' }}
-                >
-                    Time
-                </h5>
-                {/* HOURS */}
-                <div className="d-inline-block"> 
-                    <select 
-                        className="add-time"
-                        value={hour}
-                        onChange={(e) => setHour(e.target.value)}
+                <div className="add-heading d-inline-block">
+                    <h5 
+                        className="d-inline-block"
+                        style={{ marginRight: '6px' }}
                     >
-                        <option value={"1"}>1</option>
-                        <option value={"2"}>2</option>
-                        <option value={"3"}>3</option>
-                        <option value={"4"}>4</option>
-                        <option value={"5"}>5</option>
-                        <option value={"6"}>6</option>
-                        <option value={"7"}>7</option>
-                        <option value={"8"}>8</option>
-                        <option value={"9"}>9</option>
-                        <option value={"10"}>10</option>
-                        <option value={"11"}>11</option>
-                        <option value={"12"}>12</option>
-                    </select>
-                </div>
-                {/* MINUTES */}
-                <div className="d-inline-block">
-                    :
-                    <select 
-                        className="add-time"
-                        value={min}
-                        onChange={(e) => setMin(e.target.value)}
-                    >
-                        <option value={"00"}>00</option>
-                        <option value={"05"}>05</option>
-                        <option value={"10"}>10</option>
-                        <option value={"15"}>15</option>
-                        <option value={"20"}>20</option>
-                        <option value={"25"}>25</option>
-                        <option value={"30"}>30</option>
-                        <option value={"35"}>35</option>
-                        <option value={"40"}>40</option>
-                        <option value={"45"}>45</option>
-                        <option value={"50"}>50</option>
-                        <option value={"55"}>55</option>
-                    </select>
-                </div>
-                <div className="d-inline-block">
-                    <select 
-                        className="add-time"
-                        value={mdm}
-                        onChange={(e) => setMdm(e.target.value)}
-                    >
-                        <option value="AM">AM</option>
-                        <option value="PM">PM</option>
-                    </select>
+                        Time
+                    </h5>
+                    {/* HOURS */}
+                    <div className="d-inline-block"> 
+                        <select 
+                            className="add-time"
+                            value={hour}
+                            onChange={(e) => setHour(e.target.value)}
+                        >
+                            <option value={"1"}>1</option>
+                            <option value={"2"}>2</option>
+                            <option value={"3"}>3</option>
+                            <option value={"4"}>4</option>
+                            <option value={"5"}>5</option>
+                            <option value={"6"}>6</option>
+                            <option value={"7"}>7</option>
+                            <option value={"8"}>8</option>
+                            <option value={"9"}>9</option>
+                            <option value={"10"}>10</option>
+                            <option value={"11"}>11</option>
+                            <option value={"12"}>12</option>
+                        </select>
+                    </div>
+                    {/* MINUTES */}
+                    <div className="d-inline-block">
+                        :
+                        <select 
+                            className="add-time"
+                            value={min}
+                            onChange={(e) => setMin(e.target.value)}
+                        >
+                            <option value={"00"}>00</option>
+                            <option value={"05"}>05</option>
+                            <option value={"10"}>10</option>
+                            <option value={"15"}>15</option>
+                            <option value={"20"}>20</option>
+                            <option value={"25"}>25</option>
+                            <option value={"30"}>30</option>
+                            <option value={"35"}>35</option>
+                            <option value={"40"}>40</option>
+                            <option value={"45"}>45</option>
+                            <option value={"50"}>50</option>
+                            <option value={"55"}>55</option>
+                        </select>
+                    </div>
+                    <div className="d-inline-block">
+                        <select 
+                            className="add-time"
+                            value={mdm}
+                            onChange={(e) => setMdm(e.target.value)}
+                        >
+                            <option value="AM">AM</option>
+                            <option value="PM">PM</option>
+                        </select>
+                    </div>
                 </div>
                 <br/>
                 <br/>
@@ -162,6 +171,12 @@ const AddTask = ({ handleAlerts }) => {
                 />
                 <br/>
                 <div className="text-center">
+                    <Link to="/">
+                        <button 
+                            className="btn btn-danger"
+                            style={{ marginRight: "10px" }}
+                        >Go Back</button>
+                    </Link>
                     { !isPending && <button className="btn btn-primary">Add Task</button> }
                     { isPending && <button className="btn btn-primary" disabled>Adding...</button>}
                 </div>

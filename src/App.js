@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import AddTask from './AddTask';
 import Alerts from './Alerts';
+import Header from './Header';
 import Home from "./Home";
 import Navibar from "./Navibar";
 
@@ -17,7 +18,7 @@ function App() {
   return (
     <Router>
       <div className="app-container">
-        <Navibar handleAlerts={handleAlerts} />
+        {/* <Navibar handleAlerts={handleAlerts} /> */}
         <Alerts alerts={alerts} handleAlerts={handleAlerts} />
         <div className="main"> 
           <div className="main-container mx-auto">

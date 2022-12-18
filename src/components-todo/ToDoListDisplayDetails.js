@@ -25,12 +25,16 @@ const ToDoListDisplayDetails = ({
                 className='text-center todo-details-child'
                 variants={detailsVariant}
                 initial="hidden"
-                animate={ openId === 'todo-details-child'+id ? "visible" : "hidden" }
+                animate={
+                    openId === 'todo-details-child'+id ? 
+                        "visible" : 
+                        "hidden" 
+                }
             >
                 <Row className='gx-2 ps-3'>
                     <Col className='text-start'>
-                        <div className='pb-2'>{ month }/{ day }/{ year } - { hour }:{ min } { mdm }</div>
-                        <div>{ addr }</div>
+                        <div className='ps-3 pb-2'>{ month }/{ day }/{ year } - { hour }:{ min } { mdm }</div>
+                        <div className='ps-3 pe-3'>{ addr }</div>
                     </Col>
                     <div className='my-3 ps-3 pe-3 text-start memo'>{ memo }</div>
                 </Row>

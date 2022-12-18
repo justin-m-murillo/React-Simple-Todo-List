@@ -1,4 +1,5 @@
 import ToDoList from "./components-todo/ToDoList";
+import Header from "./Header";
 import useFetch from "./useFetch";
 
 
@@ -14,6 +15,7 @@ const Home = () => {
             {
                 //isPending &&
                 //<div>Loading...</div>
+                <Header />
             }
             {
                 data &&

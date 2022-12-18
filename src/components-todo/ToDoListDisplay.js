@@ -37,7 +37,7 @@ const ToDoListDisplay = ({ todos, handleDelete }) => {
             opacity: 0,
             transition: {
                 type: 'tween',
-                duration: 0.3
+                duration: 0.25
             }
         },
         visible: {
@@ -45,7 +45,7 @@ const ToDoListDisplay = ({ todos, handleDelete }) => {
             opacity: 1,
             transition: {
                 type: 'tween',
-                duration: 0.3,
+                duration: 0.25,
             }
         }
     }

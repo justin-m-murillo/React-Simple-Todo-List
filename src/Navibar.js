@@ -5,14 +5,14 @@ const Navibar = ({ handleAlerts }) => {
 
     return (
         <Container fluid style={{ padding: "0px" }}>
-            <Navbar bg='light' expand='sm'>
+            <Navbar className='navibar' expand='sm'>
                 <Navbar.Brand>
                     <Link 
                         to="/" 
                         onClick={handleAlerts}
                         style={{ textDecoration: 'none', color: 'black', marginLeft: '10px' }}
                     >
-                        Simple To-Do List
+                        <span>Simple To-Do List</span>
                     </Link>
                 </Navbar.Brand>
                     <Nav className="ms-auto navi-add-btn">
