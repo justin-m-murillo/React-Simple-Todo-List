@@ -6,13 +6,14 @@ const ToDoList = ({ data }) => {
     const [todos, setTodos] = useState(data);
     const history = useHistory();
 
-    const handleDelete = (id) => {
+    const handleDelete = (id, setToDelete) => {
         fetch('http://localhost:8000/todos/'+id, {
             method: 'DELETE'
         }).then(() => {
             let newTodos = [];
             newTodos = todos.filter(todo => todo.id !== id);
             setTodos(newTodos);
+            setToDelete(null);
             history.push('/');
         });
     }

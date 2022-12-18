@@ -1,46 +1,32 @@
 {
   "todos": [
     {
-      "title": "Gotta learn animations now fml",
-      "memo": "Animations might irritate me. If only there were more game dev jobs smh.",
+      "title": "more tests",
+      "memo": "more tests",
       "date": {
         "year": 2022,
         "month": 12,
-        "day": 16
-      },
-      "hour": "12",
-      "min": "00",
-      "mdm": "PM",
-      "addr": "home",
-      "id": 4
-    },
-    {
-      "title": "How do these items stack",
-      "memo": "When items have inconsistent height",
-      "date": {
-        "year": 2022,
-        "month": 12,
-        "day": 16
+        "day": 18
       },
       "hour": "1",
       "min": "00",
       "mdm": "AM",
-      "addr": "macbook",
-      "id": 5
+      "addr": "",
+      "id": 4
     },
     {
-      "title": "I figured out the issue with my animations",
-      "memo": "My animations look much better now, but I need to add more!",
+      "title": "Testing details layout... again",
+      "memo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sapien faucibus et molestie ac feugiat sed lectus. Risus sed vulputate odio ut enim blandit volutpat.",
       "date": {
-        "day": 20,
+        "year": 2022,
         "month": 12,
-        "year": 2022
+        "day": 18
       },
-      "hour": "6",
-      "min": "15",
-      "mdm": "PM",
-      "addr": "My workshop",
-      "id": 6
+      "hour": "1",
+      "min": "00",
+      "mdm": "AM",
+      "addr": "44758 Old Warm Springs Apt 4318, Fremont, CA 94538",
+      "id": 5
     }
   ]
 }

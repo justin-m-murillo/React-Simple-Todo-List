@@ -99,6 +99,7 @@
 .todo-item-container {
   cursor: pointer;
   background-color: white;
+  box-shadow: 5px 5px 8px;
   border-bottom: 2px solid rgba(221, 221, 221, 0.286);
 }
 
@@ -116,9 +117,9 @@
   color: #838383;
 } */
 
-.todo-text {
+/* .todo-text {
   text-align: center;
-}
+} */
 
 .todo-title {
   font-size: 18px;
