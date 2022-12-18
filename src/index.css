@@ -78,10 +78,8 @@
   /* margin: 2px 10px 2px 15px; */
 }
 
-@media screen and (max-width: 575px) {
-  .todo-btn {
-    margin: 15px;
-  }
+.todo-btn-container {
+  text-align: right;
 }
 
 .todo-dateTime {
@@ -126,16 +124,20 @@
   text-align: center;
 }
 
-@media screen and (max-width: 575px) {
-  .todo-text {
-    text-align: center;
-  }
-}
-
 .todo-title {
   font-size: 18px;
 }
 
 .todo-preview {
   font-size: 14px;
+}
+
+@media screen and (max-width: 575px) {
+  .todo-btn {
+    margin: 15px;
+  }
+
+  .todo-btn-container {
+    text-align: center;
+  }
 }

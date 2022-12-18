@@ -1,5 +1,5 @@
 import { Col } from 'react-bootstrap';
-import { InfoCircle, CheckCircle } from 'react-bootstrap-icons';
+import { CheckCircle } from 'react-bootstrap-icons';
 
 const ToDoListDisplayMain = ({ 
     title, 
@@ -17,7 +17,7 @@ const ToDoListDisplayMain = ({
                         { modifyPreview( item.memo ) }
                     </span> */}
             </Col>
-            <Col sm={{ span: 4 }} className="text-center mx-auto my-auto">
+            <Col sm={{ span: 4 }} className="todo-btn-container my-auto">
                     <CheckCircle 
                         size={"40px"}
                         color='#388E3C'
