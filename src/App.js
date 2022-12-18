@@ -17,7 +17,6 @@ function App() {
   return (
     <Router>
       <div className="app-container">
-        {/* <img src={background} alt="backgroundImage" style={{ width: '100%', height: 'auto' }}></img> */}
         <Navibar handleAlerts={handleAlerts} />
         <Alerts alerts={alerts} handleAlerts={handleAlerts} />
         <div className="main"> 
