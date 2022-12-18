@@ -83,20 +83,24 @@
 
 .todo-details-child {
   max-height: 0;
-  opacity: 0;
-  border-bottom: 1px solid #ddd;
+  /* opacity: 0; */
   overflow: hidden;
-  transition: max-height 1s, opacity 0.7s ease-out;
+  transition: all 1s ease-in-out;
 }
 
-.todo-details-child.todo-details-child-anim {
+.todo-details-child.opened {
   max-height: 500px;
-  opacity: 1;
+  /* opacity: 1; */
+}
+
+.todo-details-child.closed {
+  max-height: 0;
 }
 
 .todo-item-container {
   margin-bottom: 8px;
   padding: 10px 3px;
+  border-bottom: 2px solid rgba(221, 221, 221, 0.286);
 }
 
 /* .todo-item-container:hover {
