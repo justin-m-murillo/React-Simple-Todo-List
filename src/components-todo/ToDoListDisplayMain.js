@@ -10,7 +10,7 @@ const ToDoListDisplayMain = ({
     return ( 
         <>
             <Col sm={{ span: 10 }} className="todo-text mx-auto my-auto">
-                    <span className='ps-1 todo-title'><strong>{ title }</strong></span>
+                    <span className='todo-title'><strong>{ title }</strong></span>
             </Col>
             <Col sm={{ span: 2 }} className="todo-btn-container my-auto">
                     <CheckSquareFill 
