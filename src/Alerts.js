@@ -7,24 +7,14 @@ const Alerts = ({ alerts }) => {
     const alertMessages = alerts;
     const hasAlerts = alertMessages.length > 0 ? true : false;
 
-    //let alertString = "";
-
-    // if(alertMessages.length > 0) {
-    //     for (let i = 0; i < alertMessages.length; i++) {
-    //         alertString = alertString.concat(alertMessages[i] + "\n");
-    //     }
-    //     console.log(alertString);
-    // }
-
     return (  
         <div className="alert-container">
             <Container fluid>
-                <Row className='justify-content-center'>
-                    <Col>
-                        {/* DANGER ALERTS DISPLAYED BELOW */}
+                <Row>
+                    <Col sm={{ span: 12 }} className='gx-0 mx-auto text-center'>
                         {
                             hasAlerts &&
-                            <div className='mx-auto alert-display'>
+                            <div className='alert-display'>
                                 <Alert variant='danger'>
                                     {alertMessages.map(line => (
                                         <p 
@@ -34,7 +24,6 @@ const Alerts = ({ alerts }) => {
                                     ))}
                                 </Alert>
                             </div>
-                            
                         }
                     </Col>
                 </Row>
