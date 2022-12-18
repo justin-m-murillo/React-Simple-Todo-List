@@ -82,19 +82,9 @@
 }
 
 .todo-details-child {
-  max-height: 0;
-  /* opacity: 0; */
+  margin-top: 8px;
+  font-size: 14px;
   overflow: hidden;
-  transition: all 1s ease-in-out;
-}
-
-.todo-details-child.opened {
-  max-height: 500px;
-  /* opacity: 1; */
-}
-
-.todo-details-child.closed {
-  max-height: 0;
 }
 
 .todo-item-container {
