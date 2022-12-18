@@ -19,7 +19,10 @@ const ToDoList = ({ data }) => {
 
     return (
         <div className="todo-container">
-            <ToDoListDisplay todos={todos} handleDelete={handleDelete} />
+            <ToDoListDisplay 
+                todos={todos} 
+                handleDelete={handleDelete} 
+            />
         </div>
     );
 }

@@ -43,20 +43,6 @@
       "id": 6
     },
     {
-      "title": "Why are my tasks wobbly",
-      "memo": "Tasks are wobbling in place when tasks above it are collapsing and expanding simultaneously.",
-      "date": {
-        "day": 18,
-        "month": 12,
-        "year": 2022
-      },
-      "hour": "11",
-      "min": "35",
-      "mdm": "AM",
-      "addr": "Still in my workshop",
-      "id": 7
-    },
-    {
       "title": "I figured out why my tasks were wobbling",
       "memo": "The speed for expanding and collapsing was not the same. I eliminated the wobble once each animation had the same speed.",
       "date": {

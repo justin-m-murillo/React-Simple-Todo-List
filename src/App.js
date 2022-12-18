@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import background from './assets/background.jpg';
 import AddTask from './AddTask';
 import Alerts from './Alerts';
 import Home from "./Home";
@@ -7,6 +8,8 @@ import Navibar from "./Navibar";
 
 
 function App() {
+
+  const bg = new URL("./assets/background.jpg", import.meta.url);
 
   const [alerts, setAlerts] = useState([]) // Array of strings
   
@@ -17,6 +20,7 @@ function App() {
   return (
     <Router>
       <div className="app-container">
+        {/* <img src={background} alt="backgroundImage" style={{ width: '100%', height: 'auto' }}></img> */}
         <Navibar handleAlerts={handleAlerts} />
         <Alerts alerts={alerts} handleAlerts={handleAlerts} />
         <div className="main"> 
