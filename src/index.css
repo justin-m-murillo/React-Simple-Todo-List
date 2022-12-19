@@ -3,14 +3,19 @@
 } */
 
 .app-container {
-  background-image: url("./assets/background.jpg");
+  /* background-image: url("./assets/flat-red-bg.jpg"); */
+  background-color: #C21E1E;
   background-size: cover;
   background-position: center;
   height: 100vh;
 }
 
 .main {
-  min-height: 40rem;
+  position: fixed;
+  z-index: 0;
+  top: 200px;
+  left: 0;
+  width: 100%;
 }
 
 .main-container {
@@ -29,7 +34,9 @@
 
 /* ADD-TASK */
 .add-task-container {
-  padding: 10px 20px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
 }
 
 .add-task-container select {
@@ -60,8 +67,8 @@
 /* HEADER */
 .header-container {
   padding-bottom: 6px;
+  border-radius: 15px 15px 0px 0px;
   background-color: white;
-  box-shadow: 5px 5px 8px;
 }
 
 /* NAVIBAR */
@@ -107,7 +114,6 @@
 .todo-item-container {
   cursor: pointer;
   background-color: white;
-  box-shadow: 5px 5px 8px;
   border-bottom: 2px solid rgba(221, 221, 221, 0.286);
 }
 

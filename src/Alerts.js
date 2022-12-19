@@ -1,11 +1,14 @@
+import { useEffect } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import Alert from 'react-bootstrap/Alert';
 
 // PROPS: //
 // alerts: Array of { type, message } objects
-const Alerts = ({ alerts }) => {
-    const alertMessages = alerts;
-    const hasAlerts = alertMessages.length > 0 ? true : false;
+const Alerts = ({ alerts, hasAlerts }) => {
+
+    // useEffect(() => {
+    //     console.log("alerts updated");
+    // }, [alerts])
 
     return (  
         <div className="alert-container">
@@ -16,9 +19,9 @@ const Alerts = ({ alerts }) => {
                             hasAlerts &&
                             <div className='alert-display'>
                                 <Alert variant='danger'>
-                                    {alertMessages.map(line => (
+                                    {alerts.map(line => (
                                         <p 
-                                            key={alertMessages.indexOf(line)}
+                                            key={alerts.indexOf(line)}
                                             className='alert-message'
                                         >{line}</p>
                                     ))}

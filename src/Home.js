@@ -3,7 +3,7 @@ import Header from "./Header";
 import useFetch from "./useFetch";
 
 
-const Home = () => {
+const Home = ({ handleAlerts }) => {
     const { data, error } = useFetch('http://localhost:8000/todos');
 
     return (  
@@ -15,7 +15,7 @@ const Home = () => {
             {
                 //isPending &&
                 //<div>Loading...</div>
-                <Header />
+                <Header handleAlerts={handleAlerts} />
             }
             {
                 data &&

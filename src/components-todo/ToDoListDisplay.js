@@ -23,10 +23,11 @@ const ToDoListDisplay = ({ todos, handleDelete }) => {
             opacity: 1
         },
         delete: {
+            y: -20,
             opacity: 0,
             transition: {
                 type: 'tween',
-                duration: 0.1
+                duration: 0.25
             }
         }
     }

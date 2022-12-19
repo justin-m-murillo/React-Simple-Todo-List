@@ -1,20 +1,18 @@
 import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { FilePlusFill } from 'react-bootstrap-icons';
 
-const Header = ({ handleAlerts }) => {
+const Header = () => {
     return (
         <Container>
             <div className="header-container">
                 <Row className="pt-2 pb-5">
                     <Col className="mx-auto text-center">
                         <Link 
-                            to="/" 
-                            onClick={handleAlerts}
+                            to="/"
                             style={{ 
                                 textDecoration: 'none', 
                                 color: 'black',
-                                fontSize: "24px"
+                                fontSize: '24px'
                             }}
                         >
                             Simple To-Do List
@@ -27,10 +25,6 @@ const Header = ({ handleAlerts }) => {
                                 <button 
                                     className="w-100 btn btn-primary p-0 pb-1"
                                     type="button"
-                                    // style={{
-                                    //     cursor: 'pointer'
-                                    // }}
-                                    onClick={handleAlerts}
                                 >
                                     <div style={{ fontSize: "28px" }}>
                                         +

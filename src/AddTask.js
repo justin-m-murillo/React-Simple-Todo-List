@@ -175,6 +175,7 @@ const AddTask = ({ handleAlerts }) => {
                         <button 
                             className="btn btn-danger"
                             style={{ marginRight: "10px" }}
+                            onClick={handleAlerts}
                         >Go Back</button>
                     </Link>
                     { !isPending && <button className="btn btn-primary">Add Task</button> }
